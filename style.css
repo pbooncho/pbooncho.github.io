@@ -1,0 +1,169 @@
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: palevioletred;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: "Sofia", sans-serif;
+    z-index: 15;
+}
+
+ul.topnav li {
+    float: left;
+    border-right: 1px solid white;
+}
+
+ul.topnav li:last-child {
+    border-right: none;
+}
+
+ul.topnav li a {
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: pink;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: plum;
+}
+
+ul.topnav li a.active {
+    background-color: rebeccapurple;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+body {
+    margin: 0;
+    font-family: "Libre Baskerville", sans-serif;
+    background-color: rosybrown;
+    color: darkslategray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.home-image-container {
+    display: flex;
+    flex-direction: column;
+}
+
+div.home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: relative;
+    bottom: 560px;
+    font-family: "Fjalla One", sans-serif;
+    font-size: xx-large;
+}
+a.small {
+    font-size: x-large;
+}
+
+div.story-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a.story-head {
+    font-family: "Fjalla One", sans-serif;
+    font-size: xx-large;
+    color: purple;
+}
+
+a.story-head2 {
+    font-family: "Fjalla One", sans-serif;
+    color: purple;
+}
+
+div.story-container a {
+    margin-bottom: 15px;
+}
+
+div.story-container a.bold {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+div.gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.gallery {
+    margin: 5px;
+    width: 350px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+}
+  
+div.gallery:hover {
+    border: 2px solid purple;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 182, 170);
+}
+
+.fa {
+    padding: 5px;
+    font-family: sans-serif;
+    font-size: 50px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 25px 10px;
+}
+
+.fa:hover {
+    opacity: 0.6;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #ea4c89;
+    color: white;
+}
